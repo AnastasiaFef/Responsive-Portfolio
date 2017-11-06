@@ -32,6 +32,7 @@ nav{
 	float: right;
 	padding-top: 20px;
 	margin-right: 0;
+	overflow:auto;
 }
 .nav_bar{
 	float: left;
@@ -70,6 +71,10 @@ div.img{
 	width: 48%;
 	position: relative;
 	display: block;
+}
+.my_pic{
+	width:200px;
+	height:200px;
 }
 .gallery{
 	width: 100%;
@@ -167,40 +172,80 @@ nav a:hover{
 .bar.text{
 	text-align: center;
 }
-
+/*browser size*/
 @media screen and (max-width: 980px){
 	.content{
-		width: auto;
-		padding-left: 3%;
-		padding-right: 3%;
+		width: 670px;
 	}
-	aside{
-		width: 79px;
+	section{
+		width: 330px;
 	}
-/*	aside, nav{
-		margin-right: 50px;
+	p{
+		clear: both;
 	}
+	.my_pic{
+		width: 330px;
+		height: 330px;
 	}
-	section, #name{
-		margin-left: 50px;
-	}*/
-
+	div.img{
+		width: 330px;
+	}
 }
-
+/*tablet size*/
 @media screen and (max-width: 768px) {
 	.content{
-		width: 650px;
+		width: 728px;
 	}
 	section{
 		margin-bottom: 0;
+		width: 698px;
 	}
 	aside{
 		float: left;
-		width: 476px;
+		width: 698px;
+	}
+	p{
+		clear: none;
+	}
+	.my_pic{
+		width: 330px;
+		height: 330px;
 	}
 }
-
+/*landscape phone size*/
 @media screen and (max-width: 640px){
+	.content{
+		width: 640px;
+	}
+	#name{
+		width: 640px;
+		text-align: center;
+	}
+	nav{
+		clear: both;
+		float: none;
+		text-align: center;
+		padding: 15px 0 15px 0;
+	}
+	a{
+		width: 32%;
+		text-align: center;
+	}
+	.nav_div_right{
+		padding:0;
+		margin:0;
+	}
+	section, aside{
+		width: 578px;
+		margin-left: 15px;
+	}
+	div.img{
+		width: 578px;
+	}
+	div.bar{
+		height: 55px;
+		padding-top: 25px;
+	}
 
 }
 
