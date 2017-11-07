@@ -222,7 +222,6 @@ nav a:hover{
 		text-align: center;
 	}
 	nav{
-		width: 640px;
 		clear: both;
 		float: none;
 		text-align: center;
@@ -246,6 +245,9 @@ nav a:hover{
 	div.bar{
 		height: 55px;
 		padding-top: 25px;
+	}
+	header{
+		width: 640px;
 	}
 
 }
